@@ -10,5 +10,22 @@
 		<script src="{{ site.baseurl }}/js/fancySelect.js"></script>
 		<script src="{{ site.baseurl }}/js/jquery.storageapi.min.js"></script>
 		<script src="{{ site.baseurl }}/js/jquery.browserLanguage.js"></script>
-		<script type="application/javascript" src="//widget.letsta.lk/beta/widget/script/3.js"></script>
+		<script type="application/javascript" src="http://widget.letsta.lk/beta/widget/script/3.js"></script>
+		<script>
+		         var $LT = window.$LT;
+		         if ('function' === typeof $LT) {
+		             $LT(function(messenger){
+		                 messenger.settings({
+		                     title: "Let's Talk Now",
+		                     theme: {
+		                         palette: {
+		                             primary1Color: '#ff5722', // title
+		                             accent3Color: '#ff9e80',  // operators name background
+		                             primary3Color: '#ffccbc'  // visitor’s messages background
+		                         }
+		                     }
+		                 });
+		             });
+		         }
+		</script>
 		<script src="{{ site.baseurl }}/js/main.js"></script>
