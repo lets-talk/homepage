@@ -1,0 +1,108 @@
+---
+layout: es/default
+---	
+
+<header id="header">
+			
+			{% include es/webchat/menu.html %}
+			<!--== Site Description ==-->
+			<div class="header-cta">
+				<div class="container">
+					<div class="row">
+						<div class="blk-right">
+							<h1 class= "sharperGlow">De visitantes a clientes</h1>
+							<h2 class="sharperGlow">Abre tu negocio. 
+							</br>Conversa con tus clientes en tiempo real.</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="blk-right">
+							<div class="col-md-12 col-sm-6">
+							<a id="registro-1" class="btn btn-medium" href="#registro">Comienza ahora, gratis.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bg">
+				<div id="preloader">
+					<div class="preloader"></div>
+				</div>
+				<div class="main-slider" id="main-slider">
+
+					<!--== Main Slider ==-->
+					<ul class="slides">
+						<li><img src="{{ site.baseurl }}/images/walking_man.jpg" alt="Walking Man"/></li>
+					</ul>
+
+				</div>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="container box">
+
+				<section id="webchat">
+					{% include es/webchat/webchat-1.html %}
+				</section>
+				<section>
+					{% include es/webchat/webchat-3.html %}
+				</section>
+				<section>
+					{% include es/webchat/webchat-2.html %}
+				</section>
+				<section>
+					{% include es/webchat/webchat-4.html %}
+				</section>
+				<section>
+					{% include es/webchat/webchat-5.html %}
+				</section>
+				<section id="messenger">
+					<h2 class="section-header text-center">¿Has escuchado de nuestra App?</h2>
+					{% include es/messenger-1.html %}
+				</section>
+				<section id="registro" class="row reparated">
+					{% include es/register-form.html %}
+				</section>
+				
+				<div id="gotop" class="gotop fa fa-arrow-up"></div>
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div id="map_canvas"></div>
+			
+			<div class="footer">
+				<div class="container box">
+
+					<section id="info" class="row">
+						<div class="col-sm-8">
+
+							<ul class="social-icons">
+								<li><a href="https://www.facebook.com/LetsTalkchat" target="_blank" class="fa fa-facebook"></a></li>
+								<li><a href="https://twitter.com/go_letstalk" target="_blank" class="fa fa-twitter"></a></li>
+								<!-- <li><a href="#" class="fa fa-google-plus"></a></li>
+								<li><a href="#" class="fa fa-youtube"></a></li>
+								<li><a href="#" class="fa fa-instagram"></a></li>
+								<li><a href="#" class="fa fa-pinterest"></a></li>
+								<li><a href="#" class="fa fa-linkedin"></a></li> -->
+							</ul>
+
+						</div>
+						<div class="col-sm-4 text-right">
+							<div class="copyrights">
+								Hecho a Mano por Let's Talk SpA © 2015
+							</div>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</footer>
+
+		<!--== Javascript Files ==-->
+		
+{% include scripts.html %}
+
+
