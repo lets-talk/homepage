@@ -1,5 +1,5 @@
 			<div id="menu" class="header-menu fixed">
-				<div class="container">
+				<div class="container box">
 					<div class="row">
 						<nav role="navigation" class="col-sm-12">
 							<div class="navbar-header">
@@ -11,7 +11,7 @@
 								</button>
 
 								<!--== Logo ==-->
-								<a href="#header">
+								<a class="external" href="{{ site.baseurl }}/">
 									<span class="navbar-brand logo">
 										<img src="{{ site.baseurl }}/images/icono-letstalk.png">
 									</span>
@@ -22,14 +22,13 @@
 
 								<!--== Navigation Menu ==-->
 								<ul class="nav navbar-nav">
-									<li  id="inicio"><a href="#header">Home</a></li>
-									<li><a href="#tour">Tour</a></li>
-									<li><a href="#contacto">Contact</a></li>
-									<li><a href="{{ site.baseurl }}/en/companies" class="external">for Companies</a></li>
+									<li class="current" id="inicio"><a href="#header">Top</a></li>
+									<li><a href="#messenger">Messenger</a></li>
+									<li><a href="#webchat">Webchat</a></li>
+									<li><a href="#registro">Register</a></li>
 									<li><a href="http://go-letstalk.tumblr.com/" class="external">Blog</a></li>
-									<li><a href="{{ site.baseurl }}/es/personas" class="external">Español</a></li>
+									<li><a href="{{ site.baseurl }}/es/messenger/" class="external">Español</a></li>
 								</ul>
-
 
 							</div>
 						</nav>
