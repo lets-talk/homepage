@@ -2,7 +2,7 @@
     "use strict";
 
     ///////////////////////////////////////////////////// Your
-    var venueAddress = "Rosario Norte 555, Santiago"; // Venue
+    var venueAddress = "Los Militares 4777, Santiago"; // Venue
     var placeName = "Let's Talk HQ";
     /////////////////////////////////////////////////// Adress
 
