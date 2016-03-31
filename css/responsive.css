@@ -55,7 +55,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
 	html { font-size: 58.5% }
-	
+
 	.header-bg { height: 650px; }
 
 	.table-features li span { display: none; }
@@ -90,7 +90,8 @@
 	}
 
 	img.app-button {
-		  max-height: 50px;
+		  max-height: 60px;
+			width: auto;
 	}
 
 	.header-cta h2 {
