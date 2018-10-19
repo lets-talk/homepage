@@ -1,0 +1,39 @@
+<section class="footer" id="footer">
+  <div class="container container-lg">
+
+    <h3 class="navbar-brand">
+      <%= image_tag 'brand-letstalk.svg', class: 'navbar-brand-image' %>
+      <span class="text-hide">Let´s Talk</span>
+    </h3>
+
+    <p>Copyright © 2018 Let´s Talk. Todos los derechos reservados</p>
+
+    <ul class="menu menu-left mb-x5">
+      <li class="menu-item menu-item--inline">
+        ventas@letstalk.com
+      </li>
+      <li class="menu-item menu-item--inline">
+        facebook.com/letstalk
+      </li>
+    </ul>
+
+
+    <ul class="menu menu-left">
+      <% data.navigation.footer.each do |item| %>
+      <li class="menu-item menu-item--inline mr-x5">
+        <strong><%= item.caption %></strong>
+
+        <ul class="menu">
+          <% item.links.each do |item| %>
+          <li class="menu-item">
+            <%= link_to item.label, item.url, class: 'menu-link' %>
+          </li>
+          <% end %>
+        </ul>
+
+      </li>
+      <% end %>
+    </ul>
+
+  </div>
+</section>
