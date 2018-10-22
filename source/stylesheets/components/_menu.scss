@@ -9,7 +9,6 @@
 	float: right;
 }
 
-
 .menu-item {
 	list-style: none;
 	margin-bottom: $space-x1;
@@ -29,12 +28,13 @@
 	}
 }
 
-.menu-link {
-	color: $color-dark-secondary;
+.menu-item-link {
 	text-decoration: none;
+}
 
-	&:hover {
-		color: $color-dark-primary;
-		text-decoration: underline;
-	}
+.menu-text {
+
+}
+.menu-blocks {
+
 }

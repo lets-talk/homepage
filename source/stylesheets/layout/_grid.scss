@@ -2,10 +2,14 @@
 /* ========================================================================== */
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: ($column-gutter / -2);
-  margin-left: ($column-gutter / -2);
+  & {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container > & {
+    margin-right: ($column-gutter / -2);
+    margin-left: ($column-gutter / -2);
+  }
 }
 
 .col {

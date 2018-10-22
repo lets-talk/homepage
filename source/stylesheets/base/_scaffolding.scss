@@ -1,3 +1,9 @@
+// Scaffold
+
+$body-bg:                     $color-background !default;
+$body-color:                  rgba($theme-light,.9) !default;
+
+
 /* SCAFFOLDING */
 /* ========================================================================== */
 
@@ -6,6 +12,9 @@
 *::after {
   box-sizing: border-box;
 }
+
+//::selection {}
+//::scrollbar {}
 
 // Base Styles
 
@@ -20,7 +29,6 @@ body {
   font-family: $font-family-base;
   color: #222;
 }
-
 
 // Spacing
 

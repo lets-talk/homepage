@@ -14,4 +14,8 @@
 
 .navbar-menu {
 	margin: 0;
+
+	.menu-item-link:hover {
+		text-decoration: underline;
+	}
 }

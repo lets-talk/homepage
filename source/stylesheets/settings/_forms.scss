@@ -1,0 +1,15 @@
+// Forms
+
+// $input-background:            white;
+// $input-border:                1px solid #DDD;
+// $input-radius:                3px;
+
+$button-border:                1px solid transparent;
+$button-radius:                $space-x3;
+
+$input-background:            rgba($color-default,.05);
+$input-border:                1px solid transparent;
+$input-radius:                $space-x3;
+
+$input-placeholder-color:     $color-dark-disabled !default;
+$input-plaintext-color:       $color-dark-primary !default;

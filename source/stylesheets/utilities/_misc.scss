@@ -23,18 +23,21 @@
   float: left !important;
 }
 
-.p-relative {
-  position: relative !important;
-}
-.p-absolute {
-  position: absolute !important;
-}
-.p-static {
-  position: static !important;
-}
-.p-fixed {
-  position: fixed !important;
-}
+
+// Display
+
+.d-none         { display: none !important; }
+.d-inline       { display: inline !important; }
+.d-block        { display: block !important; }
+.d-inline-block { display: inline-block !important; }
+
+
+// Position
+
+.p-relative { position: relative !important; }
+.p-absolute { position: absolute !important; }
+.p-static   { position: static !important; }
+.p-fixed    { position: fixed !important; }
 
 // Clearing
 // Self Clearing Goodness

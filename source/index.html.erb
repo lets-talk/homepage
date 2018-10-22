@@ -4,24 +4,23 @@ title: Let´s Talk - Mensajería instantánea para grandes empresas
 
 
 
-<section class="section" id="about">
+<section class="section p-relative" id="featured">
   <div class="container container-lg">
 
     <div class="row">
       <div class="col col-sm-7">
         <h1 class="type-jumbo"><%= data.home.title %></h1>
 
-        <ol>
+        <ol class="my-x4 text-secondary">
           <% data.home.benefits.each do |b| %>
-          <li><%= b %></li>
+          <li class="mb-x2"><%= b %></li>
           <% end %>
         </ol>
 
         <form>
           <label></label>
           <div class="form-group">
-            <input class="form-input" type="text" name="contact" placeholder="<%= data.home.cta.placeholder %>">
-            <button class="button-secondary"><%= data.home.cta.action %></button>
+            <input class="form-input input-large radius-left col col-6" type="text" name="contact" placeholder="<%= data.home.cta.placeholder %>"><button class="button-secondary button-large radius-right"><%= data.home.cta.action %></button>
           </div>
         </form>
 
@@ -47,8 +46,11 @@ title: Let´s Talk - Mensajería instantánea para grandes empresas
   <div class="container container-lg">
 
     <div class="row">
-      <div class="col col-sm-8">
+      <div class="col col-sm-8 pr-0">
         <h2 class="type-display mb-x15"><%= data.home.headline %></h2>
+      </div>
+      <div class="col col-sm-4 p-relative">
+        <%= image_tag 'graphic-overview.svg', class: 'graphic-overview image-2x' %>
       </div>
     </div>
 
@@ -80,11 +82,11 @@ title: Let´s Talk - Mensajería instantánea para grandes empresas
         </p>
 
         <form>
-          <input class="form-input u-full-width" type="text" placeholder="<%= data.home.contact.form.name %>">
-          <input class="form-input u-full-width" type="text" placeholder="<%= data.home.contact.form.email %>">
-          <input class="form-input u-full-width" type="text" placeholder="<%= data.home.contact.form.company %>">
-          <textarea class="form-textarea u-full-width" placeholder="<%= data.home.contact.form.company %>"></textarea>
-          <button class="button-secondary"><%= data.home.contact.form.submit %></button>
+          <input class="form-input input-large u-full-width" type="text" placeholder="<%= data.home.contact.form.name %>">
+          <input class="form-input input-large u-full-width" type="text" placeholder="<%= data.home.contact.form.email %>">
+          <input class="form-input input-large u-full-width" type="text" placeholder="<%= data.home.contact.form.company %>">
+          <textarea class="form-textarea input-large u-full-width" placeholder="<%= data.home.contact.form.company %>"></textarea>
+          <button class="button-secondary button-large"><%= data.home.contact.form.submit %></button>
         </form>
       </div>
 

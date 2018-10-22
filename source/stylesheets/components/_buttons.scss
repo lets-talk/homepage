@@ -9,13 +9,13 @@ input[type="button"] {
 
   & {
     display: inline-block;
-    height: 38px;
-    padding: 0 30px;
+    height: 32px;
+    padding: 0 $space-x2;
     color: #555;
     text-align: center;
     font-size: 11px;
     font-weight: 600;
-    line-height: 38px;
+    line-height: 32px;
     letter-spacing: .1rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -25,6 +25,7 @@ input[type="button"] {
     border: 1px solid #bbb;
     cursor: pointer;
     box-sizing: border-box;
+    vertical-align: middle;
   }
 
   &:hover, &:focus {
@@ -67,4 +68,11 @@ input[type="button"] {
 }
 .button-rect {
   border-radius: 0px;
+}
+
+
+.button-large {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 $space-x3; // The 6px vertically centers text on FF, ignored by Webkit
 }

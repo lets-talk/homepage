@@ -4,47 +4,65 @@
 
 TABLE OF CONTENTS
 
+# Base
 - Normalize
 - Scaffolding
 - Breakpoints
+
+# Layout
+- Container
 - Grid
-- Spacing
+
+# Content
 - Typography
 - Links
-- Buttons
 - Forms
 - Lists
 - Code
 - Tables
-- Container
-- Layout
-- Utilities
+
+# Components
+- Buttons
+- Navbar
+- Mennu
+
+# Utilities
+- Misc
+- Color
+- Spacing
+- Shadow
 
 */
 
-@import "normalize";
-@import "variables";
+@import "settings/breakpoints";
+@import "settings/grid";
+@import "settings/fonts";
+@import "settings/typography";
+@import "settings/colors";
+@import "settings/forms";
 
-@import "scaffolding";
-@import "breakpoints";
+@import "base/normalize";
+@import "base/scaffolding";
 
-@import "container";
-@import "grid";
+@import "layout/container";
+@import "layout/grid";
 
-@import "typography";
-@import "links";
-@import "buttons";
-@import "forms";
-@import "lists";
-@import "code";
-@import "tables";
+@import "content/typography";
+@import "content/links";
+@import "content/forms";
+@import "content/lists";
+@import "content/code";
+@import "content/tables";
 
-@import "navbar";
-@import "menu";
+@import "components/buttons";
+@import "components/navbar";
+@import "components/menu";
 
-@import "layout";
-@import "utilities";
-@import "colors";
-@import "spacing";
+@import "utilities/tools";
+@import "utilities/misc";
+@import "utilities/colors";
+@import "utilities/spacing";
+@import "utilities/shadows";
+@import "utilities/radius";
 
-@import "website";
+@import "pages/home";

@@ -27,6 +27,21 @@
 //  @include respond(from 320px, to 500px)   { /* CSS here ... */ };
 //  @include respond(from 320px, to(medium)) { /* CSS here ... */ };
 
+// Breakpoints
+
+$size-xsmall:          480px !default; // to phone
+$size-small:           768px !default; // from phone to tablet
+$size-medium:          992px !default; // from tablet to desktop
+$size-large:          1200px !default; // from desktop to larger
+$size-xlarge:         1400px !default; // from larger
+
+$breakpoints: (
+  xs:   $size-xsmall,
+  sm:   $size-small,
+  md:   $size-medium,
+  lg:   $size-large,
+  xl:   $size-xlarge,
+);
 
 // Supported names
 $breakpoint-names: (
@@ -42,7 +57,6 @@ $breakpoint-names: (
   lg:            lg,
   xl:            xl,
 );
-
 
 @function breakpoint($name) {
   $breakpoint-abbr: map-get($breakpoint-names, $name);
@@ -107,7 +121,6 @@ $breakpoint-names: (
     }
   }
 }
-
 
 body {
   content: "screen-xs:0";

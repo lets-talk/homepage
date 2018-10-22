@@ -320,3 +320,59 @@ select:focus {
   border: 1px solid #33C3F0;
   outline: 0;
 }
+
+
+
+
+#
+# BASEKIT CONFIG
+# Version 0.1
+#
+# 1. Assets
+# 2. Directories
+# 3. Layouts
+# 4. Extensions
+# 5. Options
+# 6. Eviroments
+# 7. Deploy
+#
+
+
+
+# 1. Assets
+# after_configuration do
+#   sprockets.append_path "#{root}/assets/stylesheets"
+#   sprockets.append_path "#{root}/assets/javascripts"
+#   sprockets.append_path "#{root}/vendor/bower"
+# # sprockets.import_asset 'jquery'
+# # sprockets.import_asset 'hashgrid'
+# end
+
+
+# 2. Directories
+set :source,         "source"
+set :build_dir,      "build"
+
+set :data_dir,       "data"
+set :locales_dir,    "locales"
+set :helpers_dir,    "helpers"
+
+# Relative to source
+set :layouts_dir,    "layouts"
+set :partials_dir,   "partials"
+
+set :css_dir,        "stylesheets"
+set :js_dir,         "javascripts"
+set :images_dir,     "images"
+set :fonts_dir,      "fonts"
+
+
+configure :build do
+  activate :imageoptim
+  activate :minify_css
+  activate :minify_javascript
+  # activate :cache_buster
+  # activate :asset_hash
+  # activate :relative_assets
+  # set :relative_links, false
+end
