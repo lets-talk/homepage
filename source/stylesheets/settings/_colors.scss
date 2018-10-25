@@ -34,9 +34,11 @@ $color-foreground:           rgba($black,.9) !default;
 
 
 // Color themes
+$color-light:                $color-background !default;
+$color-dark:                 $color-foreground !default;
 
-$theme-light:                $color-foreground !default;
-$theme-dark:                 $color-background !default;
+$theme-light:                $color-dark !default;
+$theme-dark:                 $color-light !default;
 
 $color-dark-primary:         rgba($theme-light,.9);
 $color-dark-secondary:       rgba($theme-light,.7);

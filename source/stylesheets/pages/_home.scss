@@ -1,6 +1,10 @@
 /* WEBSITE */
 /* ========================================================================== */
 
+.navbar-menu {
+    margin-top: $space-x1;
+}
+
 .section {
 	padding-top: $space-x20;
 }
@@ -15,9 +19,9 @@
 }
 .graphic-overview {
 	position: absolute;
-	width: 180%;
-	top: -70%;
-	left: -10%;
+	width: 200%;
+	top: -40%;
+	left: 10%;
 }
 .graphic-contact {
 	position: absolute;
@@ -45,10 +49,6 @@
 	width: 100%;
 }
 
-#navigation  {
-	z-index: 1;
-	position: relative;
-}
 
 #featured {
 	height: 100vh;

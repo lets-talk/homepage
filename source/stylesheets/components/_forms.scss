@@ -28,9 +28,9 @@ label > .label-body {
 .form-textarea,
 .form-select {
   padding: $space-x1 $space-x2; // The 6px vertically centers text on FF, ignored by Webkit
-  background-color: $input-background;
-  border: $input-border;
-  border-radius: $input-radius;
+  background-color: $input-default-background;
+  border: $input-default-border;
+  border-radius: $input-base-radius;
   box-shadow: none;
   box-sizing: border-box;
   vertical-align: middle;
@@ -65,7 +65,8 @@ label > .label-body {
 .form-input:focus,
 .form-textarea:focus,
 .form-select:focus {
-  border: 1px solid #33C3F0;
+  background-color: $input-active-background;
+  border: $input-active-border;
   outline: 0;
 }
 

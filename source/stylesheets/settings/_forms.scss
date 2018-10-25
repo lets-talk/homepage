@@ -4,12 +4,17 @@
 // $input-border:                1px solid #DDD;
 // $input-radius:                3px;
 
-$button-border:                1px solid transparent;
-$button-radius:                $space-x3;
+$button-base-radius:               $space-x3;
+$button-base-border:          1px solid transparent;
 
-$input-background:            rgba($color-default,.05);
-$input-border:                1px solid transparent;
-$input-radius:                $space-x3;
+$input-base-radius:           $space-x3;
+
+$input-default-background:    rgba($color-default,.05);
+$input-default-border:        1px solid transparent;
+
+$input-active-background:     rgba($color-light,.8);
+$input-active-border:         1px solid $color-accent;
+
 
 $input-placeholder-color:     $color-dark-disabled !default;
 $input-plaintext-color:       $color-dark-primary !default;
