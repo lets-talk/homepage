@@ -63,14 +63,15 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-configure :development do
-  # activate :livereload
-  set :debug_assets, true
-end
 
 # Deploy
 activate :deploy do |deploy|
   deploy.deploy_method = :git
+end
+
+configure :development do
+  # activate :livereload
+  set :debug_assets, true
 end
 
   # Optional Settings
